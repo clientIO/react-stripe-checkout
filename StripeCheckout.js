@@ -471,6 +471,7 @@ export default class ReactStripeCheckout extends React.Component {
     if (this.props.children) {
       return (
         <ComponentClass
+            style={this.props.style}
           {...{
             [this.props.triggerEvent]: this.onClick,
           }}
